@@ -11,6 +11,6 @@ class Tag extends Model
     use HasFactory;
 
     public function jobs(){
-
+        return $this->belongsToMany(Job::class);
     }
 }
